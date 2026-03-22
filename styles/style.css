@@ -1,5 +1,126 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--main-text-color);
+  font-family: var(--main-font);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header {
+  min-height: 668px;
+  min-block-size: 100vh;
+  padding: 10px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: start;
+  margin-block-start: 65px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 1;
+  padding-inline: 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgb(255 0 112 / 0.4);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.header__rec {
+  color: var(--accent-color);
+  position: absolute;
+  inset-inline-end: 19px;
+  inset-block-start: 10px;
+  inline-size: 52px;
+  block-size: 26px;
+}
+
+.header__rec::after {
+  content: "";
+  inline-size: 9px;
+  block-size: 9px;
+  display: inline-block;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-inline-start: 10px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.decorated-zone::after {
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+.header__title {
+  color: #db00ff;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  justify-self: start;
+  line-height: 0.83;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.header__text {
+  justify-self: start;
+  align-self: start;
+  max-inline-size: 355px;
+  padding: 1px 10px 0 0px;
+  margin-block-start: 53px;
+  font-size: 18px;
+  line-height: 1.30;
+  font-weight: 700;
 }
