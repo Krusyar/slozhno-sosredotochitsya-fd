@@ -346,15 +346,6 @@
 .gallery-image:nth-child(5) {
     grid-area: street;
   }
-
-.footer::before,
-.footer::after {
-    transform: translateY(20px);
-  }
-
-.footer__title {
-    margin-block-start: 40px;
- }
 }
 
 @media (width >= 1024px) {
