@@ -18,3 +18,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root.theme-dark .header__rec {
+  display: block;
+}

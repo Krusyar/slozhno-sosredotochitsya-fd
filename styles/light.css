@@ -35,7 +35,7 @@
   --button-hover-color: rgb(53 52 48 / 0.4);
   }
 
-  .header__rec {
+  :root:not(.theme-dark) .header__rec {
     display: none;
   }
 }
