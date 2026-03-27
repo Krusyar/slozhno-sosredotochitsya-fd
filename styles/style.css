@@ -36,7 +36,7 @@
   border: 1px solid transparent;
   padding: 0;
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--decor-color);
   text-transform: lowercase;
   font-size: 18px;
   line-height: 1;
@@ -44,23 +44,23 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--decor-color);
   pointer-events: none;
   inline-size: 70px;
   block-size: 26px;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255 0 112 / 0.4);
+  border: 1px solid var(--button-hover-color);
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--decor-color);
 }
 
 .header__rec {
-  color: var(--accent-color);
+  color: var(--decor-color);
   position: absolute;
   inset-inline-end: 19px;
   inset-block-start: 10px;
@@ -73,10 +73,10 @@
   inline-size: 9px;
   block-size: 9px;
   display: inline-block;
-  background-color: var(--accent-color);
+  background-color: var(--decor-color);
+  box-shadow: 0 0 4px 2px var(--decor-color);
   border-radius: 50%;
   margin-inline-start: 10px;
-  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .decorated-zone::before,
@@ -88,15 +88,15 @@
 }
 
 .decorated-zone::before {
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--decor-color);
+  border-inline-end: 1px solid var(--decor-color);
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
 
 .decorated-zone::after {
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--decor-color);
+  border-inline-start: 1px solid var(--decor-color);
   inset-inline-start: 10px;
   inset-block-end: 10px;
 }
@@ -111,7 +111,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--title-decor-text-color);
 }
 
 .header__text {
@@ -130,7 +130,7 @@
 }
 
 .section-title {
-  color: var(--accent-color);
+  color: var(--decor-color);
   font-size: 18px;
   line-height: 1.3;
 }
