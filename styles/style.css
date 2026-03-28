@@ -221,8 +221,8 @@
 }
 
 .footer {
-  min-height: 668px;
-  min-block-size: 100vh;
+  min-block-size: 668px;
+  block-size: 100vh;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -243,6 +243,10 @@
   .header,
   .footer {
     padding: 20px;
+  }
+
+  .footer {
+    margin-block-start: 60px;
   }
 
   .header__title,
